@@ -87,11 +87,12 @@ App targetSdkVersion >= 28(Android 9.0)情况下，系统默认不允许HTTP网�
 
 ### 接入HttpDNS
 
-- 将HttpDNSLibs\HttpDNS_xxxx.jar拷贝至应用libs相应位置
+- 将HttpDNSLibs/HttpDNS_xxxx.jar拷贝至应用libs相应位置
+- 将HttpDNSLibs/*/libhttpdns.so拷贝至应用jniLibs相应位置
 
 ### 接入灯塔
 
-- 将HttpDNSLibs\beacon_android_xxxx.jar拷贝至应用libs相应位置
+- 将HttpDNSLibs/beacon_android_xxxx.jar拷贝至应用libs相应位置
   - **注意**：已经接入了腾讯灯塔(beacon)组件的应用忽略此步
 
 ### 接口调用
