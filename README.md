@@ -94,6 +94,7 @@ App targetSdkVersion >= 28(Android 9.0)情况下，系统默认不允许HTTP网�
 
 - 将HttpDNSLibs/beacon_android_xxxx.jar拷贝至应用libs相应位置
   - **注意**：已经接入了腾讯灯塔(beacon)组件的应用忽略此步
+  - 灯塔(beacon)SDK是腾讯灯塔团队开发的用于移动应用统计分析的SDK, HttpDNS SDK使用灯塔(beacon)SDK收集域名解析质量数据, 辅助定位问题
 
 ### 接口调用
 
