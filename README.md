@@ -93,6 +93,19 @@ App targetSdkVersion >= 28(Android 9.0)情况下，系统默认不允许HTTP网�
   - **注意**：已经接入了腾讯灯塔(beacon)组件的应用忽略此步
   - 灯塔(beacon)SDK是腾讯灯塔团队开发的用于移动应用统计分析的SDK, HttpDNS SDK使用灯塔(beacon)SDK收集域名解析质量数据, 辅助定位问题
 
+### 反混淆配置
+
+```
+# HttpDNS
+-keep public class com.tencent.msdk.dns.MSDKDnsResolver {*;}
+-keep public class com.tencent.msdk.dns.base.jni.Jni{*;}
+-keep public class com.tencent.msdk.dns.HttpDnsCache$ConnectivityChangeReceiver {*;}
+-keep public class com.tencent.msdk.dns.base.log.ILogNode {*;}
+
+# 灯塔
+-keep class com.tencent.beacon.** {*;}
+```
+
 ### 接口调用
 
 ```Java
