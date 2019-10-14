@@ -122,7 +122,7 @@ try {
  * 初始化HttpDNS：如果接入了MSDK，建议初始化MSDK后再初始化HttpDNS
  *
  * @param context 应用上下文，最好传入ApplicationContext
- * @param appkey 业务appkey，可以传入腾讯云业务的UIN，或者腾讯云内部业务的手Q的appid
+ * @param appkey 业务appkey，可以传入腾讯云业务的UIN，或者腾讯内部业务的手Q的appid
  * @param dnsid dns解析id，即授权id，腾讯云官网（https://console.cloud.tencent.com/HttpDNS）申请获得，用于域名解析鉴权
  * @param dnskey dns解析key，即授权id对应的key(加密密钥)，腾讯云官网（https://console.cloud.tencent.com/HttpDNS）申请获得，用于域名解析鉴权
  * @param debug 是否开启debug日志，true为打开，false为关闭，建议测试阶段打开，正式上线时关闭
