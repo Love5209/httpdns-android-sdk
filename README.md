@@ -131,7 +131,7 @@ try {
 MSDKDnsResolver.getInstance().init(MainActivity.this, appkey, dnsid, dnskey, debug, timeout);
 
 /**
- * 设置OpenId，已接入MSDK业务直接传MSDK OpenId，其它业务传“NULL”
+ * 设置OpenId，已接入MSDK业务直接传MSDK OpenId，其他业务键入传入字段为长度50位以内, 字母数字下划线组合的字符串，用于用户唯一标记
  *
  * @param String openId
  */
