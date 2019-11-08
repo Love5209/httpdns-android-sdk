@@ -112,7 +112,7 @@ App targetSdkVersion >= 28(Android 9.0)情况下，系统默认不允许HTTP网�
 // 初始化灯塔：如果已经接入MSDK或者IMSDK或者单独接入了腾讯灯塔(Beacon)则不需再初始化该接口
 try {
     // 注意：这里业务需要输入自己的灯塔appkey
-    UserAction.setAppKey("1106283169");
+    UserAction.setAppKey("0000066HQK3XVNGP");
     UserAction.initUserAction(MainActivity.this.getApplicationContext());
 } catch (Exception e) {
     Log.e(TAG, "Init beacon failed", e);
